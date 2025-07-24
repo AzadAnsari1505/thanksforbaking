@@ -1,0 +1,41 @@
+.avatar-menu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.avatar-img, .avatar-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+.avatar-initial {
+  background: #f44336;
+  color: #fff;
+}
+.avatar-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  min-width: 160px;
+  background: #fff;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  z-index: 100;
+  padding: 14px;
+}
+.avatar-menu:hover .avatar-dropdown {
+  display: block;
+}
+#logout-btn{
+  background-color: red;
+}

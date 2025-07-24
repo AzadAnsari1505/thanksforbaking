@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CakeyWorld | Deliciously Designed</title>
+  
+  <link rel="stylesheet" href="/frontend/css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Barba.js -->
+  <script src="https://unpkg.com/@barba/core"></script>
+
+  <!-- Auth Styles -->
+</head>
+<body data-barba="wrapper">
+  <div data-barba="container" data-barba-namespace="home">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">Thanks<span>For<span>Baking</span></div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search for delicious cakes..." />
+        <div class="search-icon">&#128269;</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li id="account-section">
+        <a href="account.html" id="account-link">Account</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title"><span class="type-text"></span></h1>
+        <p class="reveal-sub">Sweeten your day with luxury flavors</p>
+        <a href="cakes.html" class="explore-btn">Explore Cakes</a>
+      </div>
+    </section>
+
+    <!-- Cake Gallery -->
+    <section class="cake-gallery">
+      <h2 class="gallery-heading">Our Signature Cakes</h2>
+      <div class="gallery-grid">
+        <!-- Cake Card 1 -->
+        <div class="cake-card">
+          <img src="/assets/images/cake1.jpeg" alt="Chocolate Bliss" />
+          <div class="cake-info reveal-text">
+            <h3>Chocolate Bliss</h3>
+            <p>₹299</p>
+          </div>
+          <div class="add-cart-hover">Add to Cart</div>
+        </div>
+
+        <!-- Cake Card 2 -->
+        <div class="cake-card">
+          <img src="/assets/images/cake2.jpeg" alt="Berry Bliss" />
+          <div class="cake-info reveal-text">
+            <h3>Berry Bliss</h3>
+            <p>₹299</p>
+          </div>
+          <div class="add-cart-hover">Add to Cart</div>
+        </div>
+
+        <!-- Cake Card 3 -->
+        <div class="cake-card">
+          <img src="/assets/images/cake3.jpeg" alt="Vanilla Dream" />
+          <div class="cake-info reveal-text">
+            <h3>Vanilla Dream</h3>
+            <p>₹299</p>
+          </div>
+          <div class="add-cart-hover">Add to Cart</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="vertical-story">
+      <h2 class="story-heading gallery-heading">Our Story</h2>
+
+      <div class="story-block">
+        <div class="story-line">
+          <h3>2015</h3>
+          <p>It all started with a dream to bake happiness.</p>
+        </div>
+        <div class="story-image" style="background-image: url('/assets/images/story1.jpg');"></div>
+      </div>
+
+      <div class="story-block">
+        <div class="story-line">
+          <h3>2017</h3>
+          <p>From home ovens to our first small bakery shop!</p>
+        </div>
+        <div class="story-image" style="background-image: url('/assets/images/story2.jpg');"></div>
+      </div>
+
+      <div class="story-block">
+        <div class="story-line">
+          <h3>2023</h3>
+          <p>Now delivering joy daily to thousands of cake lovers!</p>
+        </div>
+        <div class="story-image" style="background-image: url('/assets/images/story3.jpg');"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Testimonials -->
+  <section class="testimonial-section">
+    <h2 class="section-heading">What Our Customers Say</h2>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-card">
+        <img src="/assets/images/cust_1.jfif" alt="Customer 1" />
+        <h3>Riya Sharma</h3>
+        <p>"Absolutely loved the Chocolate Bliss! Moist, rich, and heavenly 😍"</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="/assets/images/cust2.jfif" alt="Customer 2" />
+        <h3>Aarav Mehta</h3>
+        <p>"Delivery was fast and the Berry Bliss was the best I've ever had."</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="/assets/images/cust3.jfif" alt="Customer 3" />
+        <h3>Neha Kapoor</h3>
+        <p>"Perfect design, flavor, and packaging. ThanksForBaking rocks!"</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer reveal-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2><span>Thanks</span>For<span>Baking</span></h2>
+        <p>Baking happiness since 2024 🍰</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: hello@cakeyworld.com</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+    </div>
+
+    <div class="social-icons updated-social">
+      <a href="#"><img src="/assets/icons/insta.png" alt="Instagram" title="Instagram" /></a>
+      <a href="#"><img src="/assets/icons/fb.png" alt="Facebook" title="Facebook" /></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png"
+        alt="YouTube" title="YouTube" /></a>
+    </div>
+
+    <p class="copyright">
+      &copy; 2025 ThanksForBaking. All rights reserved.
+    </p>
+  </footer>
+
+
+ 
+
+
+  <!-- 🔧 Main & Cart Logic -->
+  <script src="/frontend/js/home.js" defer></script>
+  <script src="/frontend/js/cart.js"></script>
+  <script type= "module" src="/frontend/js/firebase.js"></script> <!-- your config file -->
+  <script type="module" src="/frontend/js/account.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart | ThanksForBaking</title>
+    <link rel="stylesheet" href="/css/cart.css" />
+    <link rel="stylesheet" href="/css/account-nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Thanks<span>For</span><span>Baking</span></div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search for delicious cakes..." />
+        <div class="search-icon">&#128269;</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li id="account-section">
+        <a href="account.html" id="account-link">Account</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="cart-container">
+      <div class="cart-items"></div>
+
+      <div class="cart-summary">
+        <h3>Summary</h3>
+        <p>Total: <span id="total">₹0.00</span></p>
+        <button class="checkout-btn" id="checkout-btn">
+          Proceed to Checkout
+        </button>
+      </div>
+    </section>
+    <div id="login-modal" class="custom-modal" style="display: none">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Login Required</h3>
+        <p>Please login to continue checkout.</p>
+        <a href="account.html" class="login-btn">Login / Sign Up</a>
+      </div>
+    </div>
+    <script type= "module" src="/js/firebase.js"></script> <!-- your config file -->
+    <script type="module" src="/js/cart.js"></script>
+    <script type="module" src="/js/account-nav.js"></script>
+
+  </body>
+</html>

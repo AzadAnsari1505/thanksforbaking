@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Customer Info | ThanksForBaking</title>
+  <link rel="stylesheet" href="/css/customer-info.css" />
+
+  <!-- Google Maps JS API with Autocomplete Element -->
+
+  <style>
+    gmpx-place-autocomplete {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="customer-info-section">
+    <div class="logo">
+      <span>Thanks</span><span>For</span><span>Baking</span>
+    </div>
+    <h2 class="customer-info-title">Delivery Details</h2>
+    <form id="customer-info-form" autocomplete="on" class="modern-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="custName">Full Name *</label>
+          <input type="text" id="custName" name="custName" required placeholder="e.g. Priya Sharma" />
+        </div>
+        <div class="form-group">
+          <label for="custMobile">Mobile Number *</label>
+          <input type="tel" id="custMobile" name="custMobile" required maxlength="13" placeholder="10-digit No." />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group wide">
+          <label for="custEmail">Email *</label>
+          <input type="email" id="custEmail" name="custEmail" required />
+        </div>
+      </div>
+
+      <!-- ✅ Google Address Autocomplete Element -->
+      <div class="form-row">
+        <div class="form-group wide">
+          <label>Search Address *</label>
+          <input type="text" id="autocomplete" name="custAddress" placeholder="Start typing your address..." required />
+        </div>
+      </div>
+
+      <!-- ✅ Manual Details -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="custHouse">House/Flat/Building *</label>
+          <input type="text" id="custHouse" name="custHouse" required placeholder="Flat or House No." />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="custCity">City *</label>
+          <input type="text" id="custCity" name="custCity" required />
+        </div>
+        <div class="form-group">
+          <label for="custState">State *</label>
+          <input type="text" id="custState" name="custState" required />
+        </div>
+        <div class="form-group">
+          <label for="custPincode">Pincode *</label>
+          <input type="text" id="custPincode" name="custPincode" required maxlength="6" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group wide">
+          <label for="custLandmark">Landmark (optional)</label>
+          <input type="text" id="custLandmark" name="custLandmark" placeholder="e.g. Near City Mall" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group wide">
+          <label for="custInstructions">Delivery Instructions (optional)</label>
+          <textarea id="custInstructions" name="custInstructions" rows="2" maxlength="180" placeholder="Anything important for delivery person?"></textarea>
+        </div>
+      </div>
+
+      <button class="proceed-btn" type="submit">Proceed to Payment</button>
+    </form>
+  </div>
+
+   <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQr6t1v9kdo6liDycPBkqlA99a3AF_62c&libraries=places"
+    async 
+    defer>
+  </script> 
+
+  <!-- Your custom JS file (optional) -->
+  <script type="module" src="/js/customer-info.js"></script>
+</body>
+</html>

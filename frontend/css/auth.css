@@ -1,0 +1,84 @@
+/* ✅ auth.css - Styling the login/signup popup */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.popup-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.popup-box button:hover {
+  background-color: #ff5722;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #999;
+}
+
+#toggleText {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#toggleText a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
